@@ -90,7 +90,7 @@ async def input_async(prompt, include_return=True):
 
 def load_questions():
     lst = []
-    with open("questions.txt") as file:
+    with open("questions.txt", encoding="utf-8") as file:
         flag = False
         tmp = None
         lines = file.read().splitlines()
